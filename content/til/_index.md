@@ -1,3 +1,3 @@
 ---
-title: "Today I Learned"
+title: 'Today I Learned'
 ---

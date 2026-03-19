@@ -1,4 +1,5 @@
 ---
-title: "Projects"
+title: 'Projects'
 ---
+
 Projects coming soon.
