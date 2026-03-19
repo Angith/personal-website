@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Angith Jayan</title>
+    <title>Home on Angith Jayan</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Angith Jayan</description>
+    <description>Recent content in Home on Angith Jayan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/blog/first-post/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/first-post/</guid>
+      <description>This is a test blog post</description>
+    </item>
+    <item>
+      <title>TIL: Golang Maps</title>
+      <link>http://localhost:1313/til/first-til/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/til/first-til/</guid>
+      <description>A quick note about how maps work.</description>
+    </item>
     <item>
       <title>My website</title>
       <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/first-post/</guid>
       <description>&lt;p&gt;Hello world.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;I am Angith Jayan, a backend engineer working with distributed systems and observability.&lt;/p&gt;&#xA;&lt;p&gt;I am passionate about building robust systems using Go.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
