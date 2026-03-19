@@ -1,0 +1,4 @@
+public/
+resources/
+themes/
+layouts/**/*.html
