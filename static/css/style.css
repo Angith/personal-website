@@ -352,3 +352,13 @@ footer {
   color: var(--link-color);
   font-weight: bold;
 }
+
+.social-icon {
+  color: var(--text-color);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+.social-icon:hover {
+  color: var(--link-color);
+}

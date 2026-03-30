@@ -2,7 +2,7 @@
 title: 'Home'
 ---
 
-{{< profile-img src="/images/profile.png" alt="Angith Jayan profile photo" >}}
+{{< profile-img src="/images/profile.jpg" alt="Angith Jayan profile photo" >}}
 
 Hi, I am Angith Jayan 👋🏽
 

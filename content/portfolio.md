@@ -3,23 +3,33 @@ title: 'Portfolio'
 type: 'portfolio'
 layout: 'single'
 
-intro: "Software Engineer with around 7 years of experience building and working on scalable systems. Experienced in designing microservices using **Go**, with additional experience in Node.js, Kubernetes, and CI/CD workflows.\n\nWorked with databases like PostgreSQL, MongoDB, and Redis. Interested in solving engineering problems, improving systems, and contributing to open source."
+intro: "Software Engineer with around **7 years** of experience building and working on scalable systems. Experienced in designing microservices using **Go**, with additional experience in Node.js, Kubernetes, and CI/CD workflows.\n\nWorked with databases like PostgreSQL, MongoDB, and Redis. Interested in solving engineering problems, improving systems, and contributing to open source."
+
+contacts:
+  - name: 'Email'
+    url: 'mailto:angithcjjaas@gmail.com'
+  - name: 'LinkedIn'
+    url: 'https://www.linkedin.com/in/angithcj/'
+  - name: 'GitHub'
+    url: 'https://github.com/Angith'
 
 experience:
   - role: 'Software Engineer'
     company: 'IBM'
+    company_url: 'https://www.ibm.com/'
     date: 'Aug 2023 – Present'
     details:
-      - 'Working on Instana Go Tracer (open-source SDK for tracing, metrics, and profiling)'
+      - 'Working on [Instana Go Tracer](https://github.com/instana/go-sensor) (open-source SDK for tracing, metrics, and profiling)'
       - 'Built instrumentations for Beego, Azure Cosmos DB, and Azure Container Apps'
       - 'Improved trace handling and added new features'
       - 'Worked on cross-platform support (x86, ARM, AIX, z/OS, LinuxOne)'
       - 'Improved test coverage and CI processes'
   - role: 'Software Engineer'
     company: 'Capgemini'
+    company_url: 'https://www.capgemini.com/'
     date: 'Jan 2022 – Aug 2023'
     details:
-      - 'Worked on ODIM, an open-source infrastructure management platform'
+      - 'Worked on [ODIM](https://github.com/ODIM-Project/ODIM), an open-source infrastructure management platform'
       - 'Implemented API request queuing and Redis optimizations'
       - 'Built centralized logging solutions'
       - 'Secured Redis communication using TLS'
@@ -27,6 +37,7 @@ experience:
       - 'Developed containerized Go microservices'
   - role: 'Software Engineer'
     company: 'QBurst'
+    company_url: 'https://www.qburst.com/'
     date: 'Aug 2018 – Jan 2022'
     details:
       - 'Built backend systems and batch jobs using Go and Node.js'
