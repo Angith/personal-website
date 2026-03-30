@@ -20,6 +20,6 @@ title = 'Angith Jayan'
     url = "/projects/"
     weight = 4
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Portfolio"
+    url = "/portfolio/"
     weight = 5
