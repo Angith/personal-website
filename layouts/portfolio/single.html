@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="portfolio-header">
+  <div class="portfolio-intro">
+    {{ .Params.intro | markdownify }}
+  </div>
+</div>
+
+<div class="portfolio-section">
+  <h2 class="portfolio-section-title">Experience</h2>
+  <div class="timeline">
+    {{ range .Params.experience }}
+    <div class="timeline-item">
+      <h3 class="timeline-role">{{ .role }}</h3>
+      <h4 class="timeline-company">{{ .company }}</h4>
+      <span class="timeline-date">{{ .date }}</span>
+      <div class="timeline-body">
+        <ul>
+          {{ range .details }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<div class="portfolio-section">
+  <h2 class="portfolio-section-title">Skills</h2>
+  {{ range .Params.skills }}
+  <div class="skill-category">
+    <div class="skill-category-title">{{ .category }}</div>
+    <div class="skill-list">
+      {{ range .items }}
+      <span class="skill-badge">{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<div class="portfolio-section">
+  <h2 class="portfolio-section-title">Awards & Certifications</h2>
+  <ul class="simple-list">
+    {{ range .Params.awards }}
+    <li>{{ . | markdownify }}</li>
+    {{ end }}
+  </ul>
+
+  {{ if .Params.credly_badges }}
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
+    {{ range .Params.credly_badges }}
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="{{ . }}" data-share-badge-host="https://www.credly.com"></div>
+    {{ end }}
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  </div>
+  {{ end }}
+</div>
+
+<div class="portfolio-section">
+  <h2 class="portfolio-section-title">Education</h2>
+  <ul class="simple-list">
+    {{ range .Params.education }}
+    <li>
+      <strong>{{ .degree }}</strong><br>
+      {{ .college }}<br>
+      <span style="font-size:0.85em; color:var(--text-muted)">{{ .university }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

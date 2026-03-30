@@ -24,8 +24,11 @@
     </div>
     <nav>
         <ul>
+            {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ $active := false }}
+            {{ if eq .URL "/" }}{{ if $currentPage.IsHome }}{{ $active = true }}{{ end }}{{ else }}{{ if hasPrefix $currentPage.RelPermalink .URL }}{{ $active = true }}{{ end }}{{ end }}
+            <li><a href="{{ .URL | relURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </nav>
