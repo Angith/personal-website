@@ -1,16 +1,18 @@
 :root {
   --text-color: #333;
   --text-muted: #555;
-  --bg-color: #fafafa;
+  --bg-color: #fefdfb;
   --link-color: #0070f3;
   --border-color: #eaeaea;
+  --codeblock-bg-color: #ffffff;
 }
 :root.dark {
   --text-color: #eaeaea;
   --text-muted: #a0a0a0;
-  --bg-color: #111;
-  --link-color: #3291ff;
+  --bg-color: #0e0e0e;
+  --link-color: #efaf00;
   --border-color: #333;
+   --codeblock-bg-color: #24242b;
 }
 
 body {
@@ -361,4 +363,33 @@ footer {
 }
 .social-icon:hover {
   color: var(--link-color);
+}
+
+/* Code Blocks */
+pre {
+  background-color: var(--codeblock-bg-color);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+code {
+  background-color: var(--codeblock-bg-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1em;
 }
