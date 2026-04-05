@@ -1,0 +1,14 @@
+{{- $baseStyle := "max-width: 100%; height: auto; display: block; margin: 1.5rem auto;" -}}
+{{- $customStyle := .Get "style" -}}
+{{- $finalStyle := $baseStyle -}}
+{{- if $customStyle -}}
+  {{- $finalStyle = printf "%s %s" $baseStyle $customStyle -}}
+{{- end -}}
+<img 
+  src="{{ .Get "src" }}" 
+  alt="{{ .Get "alt" | default "Image" }}" 
+  {{ with .Get "width" }}width="{{ . }}"{{ end }} 
+  {{ with .Get "height" }}height="{{ . }}"{{ end }} 
+  class="{{ with .Get "class" }}{{ . }}{{ end }}"
+  {{ printf `style="%s"` $finalStyle | safeHTMLAttr }}
+>
