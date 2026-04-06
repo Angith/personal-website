@@ -197,6 +197,11 @@ footer {
   margin-bottom: 0.25rem;
   margin-left: -1rem;
   margin-right: -1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.blog-item:last-child {
+  border-bottom: none;
 }
 
 .blog-item:hover {
