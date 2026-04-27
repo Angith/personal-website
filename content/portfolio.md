@@ -68,11 +68,13 @@ skills:
       - 'Redis'
 
 awards:
+  - '**Developer Profession - Level 2 Experienced** (IBM – 2026)'
   - '**OpenTelemetry Certified Associate** (CNCF – 2025)'
   - '**Growth Award** (IBM – 2024)'
   - '**STAR Award** (Capgemini – 2022)'
 
 credly_badges:
+  - 'eadd2d30-6157-4b94-ae85-ff1ddf91243b'
   - '71fca8f3-c507-441b-9209-7d2774ce76f0'
   - '0aebabce-2f14-49c7-bced-906fd11a798d'
   - '7b4b8f64-c565-47b9-b7e2-0d2750054888'
