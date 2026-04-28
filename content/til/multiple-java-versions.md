@@ -3,8 +3,6 @@ title: 'Switching Java Versions on macOS: Manual vs. jenv'
 date: 2026-04-27
 ---
 
-Managing multiple Java versions (8, 17, 21) on macOS can be tedious. Here is a concise guide on switching between them using native macOS tools versus the `jenv` version manager.
-
 ## 1. Manual Switching (Native & Quick)
 
 macOS includes `/usr/libexec/java_home` to manage Java installations. You can view installed versions using `/usr/libexec/java_home -V`.
